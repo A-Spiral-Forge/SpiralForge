@@ -1,0 +1,602 @@
+/* Import here */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+/* Import ends */
+
+/* Colours var */
+* {
+    --color1: #feffde;
+    --color2: #ddffbc;
+    --color3: #91c788;
+    --color4: #52734d;
+    --font1: font-family: 'Oswald', sans-serif;
+    --font2: "Roboto", sans-serif;
+}
+/* Colours var over  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+.sechead {
+    font-family: var(--font1);
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+    .sechead {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+/* Header styling here */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    z-index: 100;
+}
+
+#spiralforge {
+    font-family: var(--font1);
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    text-shadow: 2px 2px #feffde;
+    font-weight: 900;
+}
+
+#nav {
+    margin-left: auto;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+#navbar {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3rem;
+    width: 100%;
+}
+
+.links {
+    padding: 1rem 2.5rem;
+    color: black;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-size: 1.1rem;
+    transition: all 1s ease-in-out;
+    border-bottom: 3px solid var(--color1);
+    font-weight: 600;
+}
+
+.links:hover {
+    border-bottom-color: var(--color4);
+}
+
+@media (max-width: 600px) {
+    #spiralforge {
+        margin: auto;
+    }
+    #nav {
+        margin-right: 0;
+        display: none;
+    }
+    #navbar {
+        /* display: none; */
+        flex-direction: column;
+        height: 8rem;
+    }
+}
+/* Header styling over */
+
+/* About styling here */
+#aboutout {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#aboutmain {
+    width: 90%;
+    margin: auto;
+    /* background-color: var(--color2); */
+    display: flex;
+}
+
+#sketch {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sketchimg {
+    width: 65%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border-radius: 40%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#sketchcaption {
+    width: 50%;
+    margin: 2rem auto;
+    font-family: var(--font2);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#aboutpara {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: var(--font2);
+}
+
+#greetings {
+    font-family: var(--font2);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 4rem 3.5rem;
+    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+#hi 
+{
+    font-size: 2rem;
+}
+
+#about {
+    margin: 0.5rem 3.5rem;
+    width: 70%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#aboutbtn {
+    width: 80%;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.abtbtn {
+    background-color: var(--color3);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: var(--font2);
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 1s;
+    border: 2px solid var(--color4);
+    margin-left: 3.5rem;
+    color: black;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+}
+
+.abtbtn:hover {
+    box-shadow: 3px 3px 6px var(--color4);
+}
+
+#letstalk {
+    background-color: var(--color1);
+    border: 2px solid var(--color4);
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    #aboutout {
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+    #aboutmain {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #sketch {
+        width: 100%;
+    }
+
+    #sketchimg {
+        width: 80%;
+    }
+
+    #sketchcaption {
+        width: 80%;
+    }
+
+    #aboutpara {
+        width: 100%;
+        margin-left: -1rem;
+    }
+
+    #greetings {
+        width: 80%;
+        font-size: 1.9em;
+    }
+}
+/* About styling over */
+
+/* Gallery styling here */
+#galleryout {
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+#gallerymain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: auto;
+}
+
+.gallery {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.galleryimg {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        width: 95%;
+    }
+}
+/* Gallery styling over */
+
+/* Education Styling here */
+#education {
+    margin-top: 0rem;
+    width: 100%;
+}
+
+#edumain {
+    display: flex;
+    font-family: var(--font2);
+}
+
+#edudetails {
+    margin: 3rem 3rem;
+    margin-top: 0;
+}
+
+.edudetailshead {
+    display: flex;
+    margin: 3rem 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.edudetailsheadpara {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.plus {
+    width: 1.5rem;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    background: none;
+}
+
+.edudetailspara {
+    text-indent: 3rem;
+    overflow: hidden;
+    line-height: 1.5rem;
+    /* height: 0; */
+}
+
+div.edudetailspara a[target="_blank"] {
+    text-indent: 0;
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    #edudetails {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .edudetailshead {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-bottom: 0rem;
+    }
+    .edudetailsheadpara {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    .edudetailspara {
+        width: 100%;
+        text-indent: 2.5rem;
+        overflow: scroll;
+        font-size: 1rem;
+        /* height: auto; */
+    }
+}
+/* Education styling ends */
+
+/* Project  styling here */
+#projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--font2);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 27%;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px #5b5e1680;
+    background-color: #feffe5;
+}
+
+.projectname {
+    text-align: center;
+    margin: 1rem; 
+    margin-bottom: 0rem;
+    font-weight: bolder;
+}
+
+.projectbio {
+    margin-bottom: 1rem;
+    margin: 1rem auto;
+    margin-top: 0rem;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.projectdetails {
+    margin: 1rem;
+    padding: 0rem 0.4rem;
+}
+
+.projectlink {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.githublink {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 2px solid var(--color4);
+    color: black;
+    transition: all 1s;
+}
+
+.githublink:hover {
+    box-shadow: 3px 3px 6px var(--color4);
+}
+
+.livelink {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.6rem;
+    padding-top: 0.7rem;
+    border-radius: 6px;
+    background: var(--color3);
+    color: black;
+    transition: all 1s;
+}
+
+.livelink:hover {
+    box-shadow: 3px 3px 6px var(--color4);  
+}
+
+@media (max-width: 600px) {
+    #projects {
+        flex-direction: column;
+    }
+    .project {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* Projects styling over */
+
+/* Contact styling here */
+#contact {
+    margin-top: 2rem;
+    display: flex;
+    margin-left: 4rem;
+    width: 70%;
+    font-family: var(--font2);
+}
+
+#contactform {
+    width: 100%;
+}
+
+#myform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    padding: 0 0.8rem;
+    position: relative;
+    top: 2rem;
+    z-index: 1;
+    letter-spacing: 0.1rem;
+    transition: all 300ms;
+    font-weight: 400;
+    display: inline-block;
+    width: 10rem;
+    /* border: 2px solid red; */
+}
+
+/* label {
+    top: 0;
+    letter-spacing: normal;
+    font-weight: 100;
+} */
+
+input, textarea {
+    width: 60%;
+    padding: 0.8rem;
+    outline: none;
+    background-color: inherit;
+    border: 2px solid var(--color4);
+    color: black;
+    font-family: var(--font2);
+    z-index: 2;
+    transition: all 300ms;
+}
+
+input:focus, textarea:focus {
+    margin-top: 0.15rem;
+}
+
+#timestamp {
+    display: none;
+}
+
+textarea {
+    height: 12rem;
+}
+
+#submit {
+    width: 30%;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    background-color: var(--color3);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#submit:hover {
+    box-shadow: 3px 3px 6px var(--color4);
+}
+
+@media (max-width: 600px) {
+    #contact {
+        margin-left: 1rem;
+    }
+    input,textarea {
+        width: 100%;
+    }
+    #submit
+    {
+        width: 80%;
+    }
+}
+/* Contact styling ends */
+
+/* Footer styling here */
+footer {
+    background-color: var(--color4);
+    display: flex;
+    font-family: var(--font2);
+}
+
+#contactdetails {
+    display: flex;
+    margin: 4rem;
+    width: 50%;
+}
+
+#phonemail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem;
+}
+
+#others {
+    width: 25%;
+}
+
+#socialmedialinks {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.socialmedialinks {
+    font-size: 2rem;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    #contactdetails {
+        margin-left: 1rem;
+        width: 90%;
+        flex-direction: column;
+        margin-bottom: 0rem;
+    }
+    #address {
+        width: 80%;
+    }
+    #phonemail {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    #others {
+        width: 70%;
+        margin-left: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+}
