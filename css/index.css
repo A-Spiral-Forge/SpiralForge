@@ -31,6 +31,10 @@ body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color1);
 }
@@ -61,6 +65,7 @@ header {
     display: flex;
     transition: all 500ms;
     z-index: 100;
+    box-shadow: 3px 0px 10px black;
 }
 
 #heading {
