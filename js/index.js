@@ -98,3 +98,23 @@ function labelcsschanger() {
         document.getElementById('fullnamelabel').style.width = '10rem';
     }
 }
+
+let menuOpen = false;
+document.getElementById('menu').addEventListener('click',()=>{
+    if(menuOpen) {
+        document.querySelector('header').style.height = '4rem';
+        menuOpen = false;
+    } else {
+        document.querySelector('header').style.height = '16rem';
+        menuOpen = true;
+    }
+});
+
+let navbarButtons = document.getElementsByClassName('links');
+for(let i = 0; i < navbarButtons.length; i++)
+{
+    navbarButtons[i].addEventListener('click', function() {
+        menuOpen = true;
+        menu.click();
+    });
+};

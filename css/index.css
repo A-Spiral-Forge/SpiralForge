@@ -59,7 +59,12 @@ header {
     width: 100%;
     background-color: inherit;
     display: flex;
+    transition: all 500ms;
     z-index: 100;
+}
+
+#heading {
+    display: flex;
 }
 
 #spiralforge {
@@ -68,6 +73,11 @@ header {
     margin-left: 1.5rem;
     text-shadow: 2px 2px #feffde;
     font-weight: 900;
+}
+
+#menu {
+    margin-left: auto;
+    display: none;
 }
 
 #nav {
@@ -103,17 +113,30 @@ header {
 }
 
 @media (max-width: 600px) {
-    #spiralforge {
+    header {
+        flex-direction: column;
+        height: 4rem;
+    }
+    #heading {
         margin: auto;
+        width: 100%;
+    }
+    #menu {
+        display: block;
+        width: 4rem;
+        font-size: 2rem;
+        background-color: inherit;
+        border: none;
+        padding: 1rem 0;
     }
     #nav {
-        margin-right: 0;
-        display: none;
+        width: 100%;
     }
     #navbar {
         /* display: none; */
         flex-direction: column;
         height: 8rem;
+        margin: 1.5rem 0 ;
     }
 }
 /* Header styling over */
@@ -250,7 +273,10 @@ header {
 
     #greetings {
         width: 80%;
-        font-size: 1.9em;
+        font-size: 1.7rem;
+    }
+    #hi {
+        font-size: 1.4rem;
     }
 }
 /* About styling over */
@@ -582,21 +608,26 @@ footer {
     }
     #contactdetails {
         margin-left: 1rem;
-        width: 90%;
+        width: 95%;
         flex-direction: column;
         margin-bottom: 0rem;
     }
     #address {
-        width: 80%;
+        width: 100%;
     }
     #phonemail {
         margin-top: 1rem;
         margin-left: 0;
+        font-size: 1rem;
     }
     #others {
-        width: 70%;
+        width: 85%;
         margin-left: 1rem;
         margin-top: 0rem;
         margin-bottom: 2rem;
     }
+    #socialmedialinks {
+        width: 70%;
+    }
 }
+/* Footer css end */
