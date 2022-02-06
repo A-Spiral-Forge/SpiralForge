@@ -1,0 +1,153 @@
+:root {
+	--primary-color: #000000;
+	--secondary-color: #ffffff;
+	--tertiary-color: #47e4bb;
+	--primary-font: 'Josefin Sans', sans-serif;
+}
+
+body::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: url(./../img/home-background.png) center center no-repeat;
+	z-index: -1;
+	mix-blend-mode: luminosity;
+}
+
+.nav__bar--image {
+	width: 20%;
+}
+
+.content {
+	display: flex !important;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: fit-content;
+	margin: auto;
+	border-right: 0.2rem solid var(--tertiary-color);
+	padding: 3rem 0rem;
+	left: 0;
+}
+
+.links a {
+	color: var(--secondary-color);
+	font-size: 2rem;
+	margin: 0.5rem 1rem;
+}
+
+.links a:hover {
+	color: var(--tertiary-color);
+}
+
+.home__pic--bg {
+	position: absolute;
+	--width: 22vw;
+	width: var(--width);
+	height: var(--width);
+	mix-blend-mode: hard-light;
+	background-color: var(--tertiary-color);
+	border-radius: 50%;
+	left: calc(50vw - var(--width) / 2);
+	z-index: -2;
+}
+
+.home__pic {
+	width: 18vw;
+	margin: auto;
+	display: flex;
+	margin-top: 2vw;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: var(--tertiary-color);
+	z-index: 1;
+}
+
+.home__pic img {
+	width: 100%;
+	z-index: 20;
+	mix-blend-mode: normal;
+	position: relative;
+	z-index: 10;
+}
+
+.home__content {
+	margin: 1rem auto;
+	width: fit-content;
+}
+
+.home__greetings {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	text-align: center;
+	font-weight: 400;
+}
+
+.home__name {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.home__name--span {
+	color: var(--tertiary-color);
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+.home__work {
+	text-align: center;
+	font-weight: 400;
+	line-height: 2.5rem;
+	font-size: 1.5rem;
+}
+
+.know-me {
+	color: var(--primary-color);
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+	position: relative;
+	margin: auto;
+	font-weight: 500;
+	background-color: var(--tertiary-color);
+}
+
+@media (max-width: 768px) {
+	.content {
+		flex-direction: column-reverse;
+	}
+	.links {
+		position: relative;
+		flex-direction: row;
+		border: none;
+		border-top: 0.2rem solid var(--tertiary-color);
+		padding: 1rem 0rem;
+	}
+	.nav__bar--image {
+		width: 50%;
+		margin: auto;
+	}
+	.home__pic--bg {
+		--width: 70vw;
+		margin-top: 18vw;
+	}
+	.home__pic {
+		width: 60vw;
+		margin-top: 22vw;
+	}
+}
