@@ -2,6 +2,7 @@
 	--primary-color: #000000;
 	--secondary-color: #ffffff;
 	--tertiary-color: #47e4bb;
+	--home-color: #a4aca8;
 	--primary-font: 'Josefin Sans', sans-serif;
 }
 
@@ -50,7 +51,7 @@ body::before {
 
 .home__pic--bg {
 	position: absolute;
-	--width: 22vw;
+	--width: 19vw;
 	width: var(--width);
 	height: var(--width);
 	mix-blend-mode: hard-light;
@@ -61,7 +62,7 @@ body::before {
 }
 
 .home__pic {
-	width: 18vw;
+	width: 15vw;
 	margin: auto;
 	display: flex;
 	margin-top: 2vw;
@@ -82,8 +83,9 @@ body::before {
 }
 
 .home__content {
-	margin: 1rem auto;
+	margin: 1.5rem auto;
 	width: fit-content;
+	color: var(--home-color);
 }
 
 .home__greetings {
@@ -143,11 +145,10 @@ body::before {
 		margin: auto;
 	}
 	.home__pic--bg {
-		--width: 70vw;
-		margin-top: 18vw;
+		--width: 55vw;
+		margin-top: -4vw;
 	}
 	.home__pic {
-		width: 60vw;
-		margin-top: 22vw;
+		width: 45vw;
 	}
 }

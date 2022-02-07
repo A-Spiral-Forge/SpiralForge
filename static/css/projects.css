@@ -98,6 +98,8 @@ body {
 .project__name {
 	text-align: center;
 	font-size: 2rem;
+	width: 80%;
+	margin: auto;
 	font-weight: 300;
 	margin-top: auto;
 }
@@ -152,6 +154,9 @@ body {
 	.heading {
 		margin-top: 1rem;
 	}
+	.project {
+		height: auto;
+	}
 	.projects__section {
 		grid-template-columns: auto;
 		width: 100%;
@@ -159,9 +164,14 @@ body {
 	.project__discription p {
 		font-weight: 400;
 		width: 90%;
+		font-size: 0.7rem;
 	}
 	.project__links a {
-		padding: 0.7rem 1rem;
+		padding: 0.7rem 0.7rem;
+	}
+	.project__name {
+		font-size: 1rem;
+		margin-top: 1rem;
 	}
 	.wait {
 		font-size: 1.2rem;
