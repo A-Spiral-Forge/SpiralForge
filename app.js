@@ -39,7 +39,7 @@ app.get('/projects', (req, res) => {
 });
 
 // Listen to server
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, '127.0.0.1', (err, res) => {
-	console.log(err);
+	console.log(`Server listening on ${port}`);
 });
