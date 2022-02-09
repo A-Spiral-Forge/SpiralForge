@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
+const { config } = require('process');
 
 // Express specific configuration
 const app = express();
@@ -40,6 +41,6 @@ app.get('/projects', (req, res) => {
 
 // Listen to server
 const port = process.env.PORT || 3000;
-app.listen(port, '127.0.0.1', (err, res) => {
-	console.log(`Server listening on ${port}`);
+app.listen(port, config.ip, (err, res) => {
+	console.log(`Server listening on ${config.ip}:${port}`);
 });
