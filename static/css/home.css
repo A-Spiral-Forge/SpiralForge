@@ -28,27 +28,6 @@ body::before {
 	/* align-items: center; */
 }
 
-.links {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	width: fit-content;
-	margin: auto;
-	border-right: 0.2rem solid var(--tertiary-color);
-	padding: 3rem 0rem;
-	left: 0;
-}
-
-.links a {
-	color: var(--secondary-color);
-	font-size: 2rem;
-	margin: 0.5rem 1rem;
-}
-
-.links a:hover {
-	color: var(--tertiary-color);
-}
-
 .home__pic--bg {
 	position: absolute;
 	--width: 19vw;
@@ -132,13 +111,6 @@ body::before {
 @media (max-width: 768px) {
 	.content {
 		flex-direction: column-reverse;
-	}
-	.links {
-		position: relative;
-		flex-direction: row;
-		border: none;
-		border-top: 0.2rem solid var(--tertiary-color);
-		padding: 1rem 0rem;
 	}
 	.nav__bar--image {
 		width: 50%;

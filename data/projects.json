@@ -14,14 +14,14 @@
 		"image": "guess-the-number.png"
 	},
 	{
-		"name": "Forkify by Abhay Parihar",
+		"name": "Forkify",
 		"github": "https://github.com/A-Spiral-Forge/forkify-abhay-parihar",
 		"website": "https://forkify-abhay-parihar.netlify.app/",
 		"discription": "This is a NodeJS application which takes recipes from a API and render it. Also it shows discription of recipe and ingredients per serving.",
 		"image": "forkify-abhay-parihar.png"
 	},
 	{
-		"name": "Coefficient of Restitution Visualizer",
+		"name": "CoR Visualizer",
 		"github": "https://github.com/A-Spiral-Forge/OomProject",
 		"website": "/no-project",
 		"discription": "This is a Java Application. It helps user to visualize how ball simulates when it hits ground. GUI is designed in JavaFX.",

@@ -39,6 +39,14 @@ app.get('/projects', (req, res) => {
 	res.status(200).render('projects');
 });
 
+app.get('/contact', (req, res) => {
+	res.status(200).render('contact');
+});
+
+app.all('*', (req, res) => {
+	res.status(404).render('404notfound');
+});
+
 // Listen to server
 const port = process.env.PORT || 3000;
 app.listen(port, config.ip, (err, res) => {
