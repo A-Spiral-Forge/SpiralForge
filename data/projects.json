@@ -10,7 +10,7 @@
 		"name": "Guess The Number",
 		"github": "https://github.com/A-Spiral-Forge/Guess-the-Number",
 		"website": "https://a-spiral-forge.github.io/Guess-the-Number",
-		"discription": "This is a simple JavaScript fun game. Computer randomly generates a number and give hints one you start guesssing. Also computer maintains a high score.",
+		"discription": "A simple JavaScript fun game which randomly generates a number and give hints one you start guesssing. Also computer maintains a high score.",
 		"image": "guess-the-number.png"
 	},
 	{
@@ -26,5 +26,12 @@
 		"website": "/no-project",
 		"discription": "This is a Java Application. It helps user to visualize how ball simulates when it hits ground. GUI is designed in JavaFX.",
 		"image": "coefficient-of-restitution-visualizer.png"
+	},
+	{
+		"name": "Contact Management API",
+		"github": "https://github.com/A-Spiral-Forge/contact-management-api",
+		"website": "/no-project",
+		"discription": "This is a RESTful API. It helps to search contacts, create new contact, update and delete one. This helps in managing contects.",
+		"image": "API-image.jpg"
 	}
 ]

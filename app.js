@@ -49,6 +49,7 @@ app.all('*', (req, res) => {
 
 // Listen to server
 const port = process.env.PORT || 3000;
-app.listen(port, config.ip, (err, res) => {
-	console.log(`Server listening on ${config.ip}:${port}`);
+const ip = config.ip || 'localhost';
+app.listen(port, ip, (err, res) => {
+	console.log(`Server listening on ${ip}:${port}`);
 });

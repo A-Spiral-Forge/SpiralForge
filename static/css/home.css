@@ -13,7 +13,7 @@ body::before {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: url(./../img/home-background.png) center center no-repeat;
+	background: url(./../img/home-background.png) center center repeat;
 	z-index: -1;
 	mix-blend-mode: luminosity;
 }
